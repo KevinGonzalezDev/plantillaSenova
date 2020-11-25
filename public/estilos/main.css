@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-white-color:#fff;
+    --main-divs-first-color:#FF4D0F;
+    --main-titles-color:#FF4D0F;
+
+    --main-font-family-titulos:"bold";
+    --main-font-family-parrafos:"light";
+    --main-font-family-regular:"regular";
+
+    --main-font-size-titulos:3em;
+    --main-font-size-subtitulos:2em;
+    --main-font-size-parrafos:1.4em;
+    --main-font-size-links:1.2em;
+
+    --main-width-blocks-category:320px;
+}
+
+@font-face{
+    font-family: "bold";
+    src: url('../fonts/JosefinSans-Bold.ttf');
+}
+
+@font-face{
+    font-family: "regular";
+    src: url('../fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: "light";
+    src: url('../fonts/JosefinSans-Light.ttf');
+}
+
+/* ESTILOS GENERALES, APLICAN PARA CUALQUIER COSA // ESTILO BOOSTRAP */
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.head-container{
+    width: 100%;
+    display: block;
+    position: relative;
+    
+    
+    /*GRADIENTE*/
+
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 42%, rgba(237,237,237,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(42%, rgba(247,247,247,1)), color-stop(100%, rgba(237,237,237,0)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 42%, rgba(237,237,237,0) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 42%, rgba(237,237,237,0) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 42%, rgba(237,237,237,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 42%, rgba(237,237,237,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+
+    /*GRADIENTE END*/
+}
+
+#logo-sennova{
+    width: 15em;
+}
+
+#home-banner{
+    margin-bottom: 5em;
+    width: 100%;
+}
+
+.selected{
+    color: var(--main-white-color) !important;
+    background-color: var(--main-divs-first-color);
+    padding: .4em 1em .4em 1em;
+    border-radius: 25px;
+}
+
+.flex-row-wrap-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-category{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    width: var(--main-width-blocks-category);
+    position: relative;
+}
+
+.block-category span{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+
+.orange-filter{
+    object-fit: cover;
+    z-index: 5;
+    background-color: rgba(184,58,14,.6);
+    position: absolute !important;
+}
+
+.block-category span > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.block-category div{
+    position: absolute;
+    z-index: 8;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text h2{
+    text-align: center;
+    color: var(--main-white-color);
+    font-family: var(--main-font-family-titulos);
+    font-size: var(--main-font-size-subtitulos);
+    margin-bottom: 1em;
+}
+
+.button-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: 2em;
+    width: auto;
+    height: auto !important;
+}
+
+.button-text p{
+    overflow-wrap: break-word;
+    color: var(--main-white-color);
+    font-family: var(--main-font-family-parrafos);
+    font-size: var(--main-font-size-parrafos);
+    width: 100%;
+}
+
+.button-text a{
+    padding: .4em 1.7em .4em 1.7em;
+    border: 1px solid var(--main-white-color);
+    border-radius: 25px;
+    color: var(--main-white-color);
+    margin-top: 1em;
+    font-family: var(--main-font-family-regular);
+    font-size: var(--main-font-size-links);
+}
+
+/*FOOTER*/
+
+.main-footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5em;
+    padding: 4em 0 4em 0;
+    background-color: var(--main-white-color);
+}
+
+.main-footer-container ul{
+    list-style: none;
+}
+
+.list-title{
+    color: var(--main-titles-color);
+    font-family: var(--main-font-size-titulos);
+    font-size: var(--main-font-size-parrafos);
+}
+
+.main-footer-container ul li{
+    margin: 1em;
+    font-family: var(--main-font-family-regular);
+    font-size: var(--main-font-size-links);
+}
+
+.main-footer-container ul li a{
+    color: #000;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.social-links li a img{
+    width: 2em;
+}
+
+/*FOOTER END*/
+
+/* ESTILOS GENERALES END */
+
+/* HOME */
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0 3em 0;
+    width: 90%;
+    margin: auto;
+}
+
+.menu-absolute{
+    position: absolute;
+    z-index: 5;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+.menu-container nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.menu-container ul li{
+    margin: 1em;
+}
+
+.menu-container ul li a{
+    text-decoration: none;
+    color: var(--main-divs-first-color);
+    font-family: var(--main-font-family-regular);
+    font-size: var(--main-font-size-links);
+}
+

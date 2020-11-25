@@ -1,0 +1,26 @@
+
+@media screen and (max-width:1600px){
+    
+    :root{
+        --main-width-blocks-category:300px;
+        --main-font-size-titulos:2.7em;
+        --main-font-size-subtitulos:1.7em;
+        --main-font-size-parrafos:1.2em;
+        --main-font-size-links:1em;
+    }
+
+    .main-container{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:1440px){
+    :root{
+        --main-width-blocks-category:270px;
+        --main-font-size-titulos:2.7em;
+        --main-font-size-subtitulos:1.7em;
+        --main-font-size-parrafos:1.2em;
+        --main-font-size-links:1em;
+    }
+}
