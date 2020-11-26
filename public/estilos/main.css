@@ -185,6 +185,7 @@ a{
 
 .video-block div > img{
     width: 4em;
+    cursor: pointer;
 }
 
 .video-block div > p{

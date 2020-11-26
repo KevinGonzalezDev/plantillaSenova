@@ -25,7 +25,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 1</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
@@ -46,7 +46,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 2</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
@@ -68,7 +68,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 1</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
@@ -90,7 +90,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 1</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
@@ -112,7 +112,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 1</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
@@ -134,7 +134,7 @@
                 <div>
                     <h2>TITULO<br>AGRÍCOLA 1</h2>
 
-                    <img src="img/icons/play.png">
+                    <img src="img/icons/play.png" class="MostrarPop">
                     
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
