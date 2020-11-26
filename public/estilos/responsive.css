@@ -27,6 +27,10 @@
 
         --main-width-blocks-video:370px;
     }
+
+    #popUp iframe{
+        height: 700px;
+    }
 }
 
 @media screen and (max-width:1280px){
@@ -39,5 +43,9 @@
 
         --main-width-blocks-video:320px;
         --main-width-blocks-category:230px;
+    }
+
+    #popUp iframe{
+        height: 620px;
     }
 }

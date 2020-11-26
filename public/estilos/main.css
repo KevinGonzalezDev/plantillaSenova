@@ -39,6 +39,43 @@
 
 /* ESTILOS GENERALES, APLICAN PARA CUALQUIER COSA // ESTILO BOOSTRAP */
 
+.displayed{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.6);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+}
+
+#popUp{
+    display: none;
+}
+
+#popUp iframe{
+    display: block;
+    width: 80%;
+    height: 800px;
+    margin: auto;
+}
+
+#popUp span{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 4em;
+    margin: 1em;
+}
+
 a{
     text-decoration: none;
 }
@@ -168,7 +205,7 @@ a{
     margin-bottom: 2em;
 }
 
-.video-block div > div > a{
+.video-block div > div > button{
     padding: .4em 1.7em .4em 1.7em;
     border: 1px solid var(--main-white-color);
     border-radius: 25px;
@@ -176,8 +213,15 @@ a{
     margin-top: 1em;
     font-family: var(--main-font-family-regular);
     font-size: var(--main-font-size-parrafos);
+    background: none;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
 }
 
+.video-block div > div > button:active{
+    border-color: red;
+}
 
 .block-category{
     display: flex;

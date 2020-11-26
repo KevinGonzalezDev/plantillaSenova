@@ -57,5 +57,9 @@
         </ul>
     </div>
 
+
+    <script src="jquery/jquery.js"></script>
+    <script src="js/popup.js"></script>
+
 </body>
 </html>
