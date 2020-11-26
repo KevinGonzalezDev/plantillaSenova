@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header class="head-container menu-absolute">
+    <header @if(Request::url() == Route('raiz')) class="head-container menu-absolute" @else class="head-container" @endif>
         
         <div class="menu-container">
             <img src="img/icons/sennova.png" alt="Sennova logo" id="logo-sennova">

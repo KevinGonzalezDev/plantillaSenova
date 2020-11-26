@@ -7,6 +7,8 @@
         --main-font-size-subtitulos:1.7em;
         --main-font-size-parrafos:1.2em;
         --main-font-size-links:1em;
+
+        --main-width-blocks-video:380px;
     }
 
     .main-container{
@@ -22,5 +24,20 @@
         --main-font-size-subtitulos:1.7em;
         --main-font-size-parrafos:1.2em;
         --main-font-size-links:1em;
+
+        --main-width-blocks-video:370px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    :root{
+
+        --main-font-size-titulos:2.3em;
+        --main-font-size-subtitulos:1.3em;
+        --main-font-size-parrafos:1em;
+        --main-font-size-links:.8em;
+
+        --main-width-blocks-video:320px;
+        --main-width-blocks-category:230px;
     }
 }

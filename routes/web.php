@@ -15,3 +15,4 @@ use app\Http\Controllers\Controller;
 */
 
 Route::get('/', 'AdminController@index')->name('raiz');
+Route::get('/content', 'AdminController@content')->name('content');
