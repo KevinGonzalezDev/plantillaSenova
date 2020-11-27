@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilos/main.css">
-    <link rel="stylesheet" href="estilos/responsive.css">
+    <link rel="stylesheet" href="{{ asset('estilos/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('estilos/responsive.css')}}">
     <title>Sennova</title>
 </head>
 <body>
 
     <header @if(Request::url() == Route('raiz')) class="head-container menu-absolute" @else class="head-container" @endif>
-        
+
         <div class="menu-container">
-            <img src="img/icons/sennova.png" alt="Sennova logo" id="logo-sennova">
+            <img src="{{ asset('img/icons/sennova.png')}}" alt="Sennova logo" id="logo-sennova">
 
             <nav>
                 <ul>
@@ -27,11 +27,11 @@
     </header>
 
     @yield('content')
-    
+
 
     <div class="main-footer-container main-container">
 
-        <img src="img/icons/sennova.png" alt="Sennova logo" id="logo-sennova">
+        <img src="{{ asset('img/icons/sennova.png')}}" alt="Sennova logo" id="logo-sennova">
 
         <ul>
             <li class="list-title">ENLACES:</li>
@@ -49,17 +49,17 @@
         <ul>
             <li class="list-title ">REDES:</li>
             <ul class="social-links">
-                <li><a href=""><img src="img/icons/fb.png" alt="social icon"></a></li>
-                <li><a href=""><img src="img/icons/ig.png" alt="social icon"></a></li>
-                <li><a href=""><img src="img/icons/ld.png" alt="social icon"></a></li>
-                <li><a href=""><img src="img/icons/tw.png" alt="social icon"></a></li>
+                <li><a href=""><img src="{{ asset('img/icons/fb.png')}}" alt="social icon"></a></li>
+                <li><a href=""><img src="{{ asset('img/icons/ig.png')}}" alt="social icon"></a></li>
+                <li><a href=""><img src="{{ asset('img/icons/ld.png')}}" alt="social icon"></a></li>
+                <li><a href=""><img src="{{ asset('img/icons/tw.png')}}" alt="social icon"></a></li>
             </ul>
         </ul>
     </div>
 
 
-    <script src="jquery/jquery.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="{{ asset('jquery/jquery.js')}}"></script>
+    <script src="{{ asset('js/popup.js')}}"></script>
 
 </body>
 </html>

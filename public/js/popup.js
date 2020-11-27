@@ -16,7 +16,7 @@ closeButton.addEventListener('click', function(){
 
 for(let i = 0; i < botones.length; i++){
     botones[i].addEventListener('click', function(){
-        
+
         if(!mostrar){
             mostrar = true;
         }else{
@@ -30,6 +30,6 @@ for(let i = 0; i < botones.length; i++){
         }else{
             popUp.classList.remove('displayed');
         }
-        
+
     })
 }
