@@ -18,7 +18,11 @@ class AdminController extends Controller
       $sql = DB::SELECT("SELECT * "
               . "FROM tematica "
               . "WHERE micrositio = ". $id);
-        $datos = ['info'=>$sql];
+      $sql1 = DB::SELECT("SELECT * "
+              . "FROM micrositio "
+              . "WHERE id = ". $id);
+
+        $datos = ['info'=>$sql,'micrositio'=>$sql1];
         return view('micrositio')->with('datos',$datos);
     }
 

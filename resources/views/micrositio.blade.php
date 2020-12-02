@@ -1,9 +1,9 @@
 @extends('layout.general')
 
 @section('content')
-
-    <img src="{{ asset('img/templates/banner/home.jpg')}}" alt="Home Banner" id="home-banner" id="banner">
-
+    @foreach( $datos['micrositio'] as $d)
+    <img src="{{ asset('img/templates/home/'.$d->img_banner)}}" alt="Home Banner" id="home-banner" id="banner">
+    @endforeach
     <div class="flex-row-wrap-center main-container">
 
 
@@ -12,7 +12,7 @@
 
             <!-- MASCARA DE IMAGEN -->
                 <span>
-                    <img src="{{ asset('img/templates/home/category1.jpg')}}" alt="category image">
+                    <img src="{{ asset('img/templates/content/'.$d->imagen)}}" alt="category image">
                     <span class="orange-filter"></span>
                 </span>
 

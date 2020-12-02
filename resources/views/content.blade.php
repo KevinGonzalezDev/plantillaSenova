@@ -10,17 +10,21 @@
             <p>{{$d->texto_descriptivo}}</p>
           @endforeach
         </div>
-
+        @if( count($datos['videos']) == 1 )
+        @foreach( $datos['videos'] as $d)
         <div class="main-video-container">
-            <iframe width="1242" height="529" src="https://www.youtube.com/embed/RDYeEJK4NbI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1242" height="529" src="{{$d->url}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        @endforeach
+        @else
+
 
         <div class="flex-row-wrap-center videos-content">
           @foreach( $datos['videos'] as $d)
             <div class="video-block">
 
                 <span>
-                    <img src="{{ asset('img/templates/content/blockv1.png')}}" alt="block image">
+                    <img src="{{ asset('img/templates/content/'.$d->imagen)}}" alt="block image">
                     <span class="orange-filter"></span>
                 </span>
 
@@ -30,7 +34,7 @@
                     <img src="{{ asset('img/icons/play.png')}}" class="MostrarPop">
 
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem?</p>
+                        <p>{{$d->texto_descriptivo}}</p>
                         <button onClick = 'showVideo("{{$d->url}}")' >VER</button>
                     </div>
 
@@ -39,6 +43,7 @@
             </div>
 
           @endforeach
+        @endif
 
     </div>
 </div>
