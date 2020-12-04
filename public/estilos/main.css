@@ -14,12 +14,13 @@
     --main-font-family-regular:"regular";
 
     --main-font-size-titulos:3em;
-    --main-font-size-subtitulos:2em;
-    --main-font-size-parrafos:1.4em;
-    --main-font-size-links:1.2em;
+    --main-font-size-subtitulos:1.3em;
+    --main-font-size-parrafos:1em;
+    --main-font-size-links:1em;
 
     --main-width-blocks-category:320px;
     --main-width-blocks-video:380px;
+    --main-height-blocks:400px;
 }
 
 @font-face{
@@ -153,6 +154,7 @@ a{
     margin: 1em;
     width: var(--main-width-blocks-video);
     position: relative;
+    height: var(--main-height-blocks);
 }
 
 .video-block span{
@@ -233,6 +235,7 @@ a{
     margin: 1em;
     width: var(--main-width-blocks-category);
     position: relative;
+    height: var(--main-height-blocks);
 }
 
 .block-category span{
@@ -249,13 +252,15 @@ a{
     z-index: 5;
     background-color: rgba(0,0,0,.6);
     position: absolute !important;
+    transition: all ease-in .7s;
 }
 
 .orange-filter{
     object-fit: cover;
     z-index: 5;
-    background-color: rgba(184,58,14,.6);
+    background-color: rgba(184,58,14,.6) !important;
     position: absolute !important;
+    transition: all ease-in .7s;
 }
 
 .block-category span > img{
@@ -282,7 +287,7 @@ a{
     color: var(--main-white-color);
     font-family: var(--main-font-family-titulos);
     font-size: var(--main-font-size-subtitulos);
-    margin-bottom: 1em;
+    margin-bottom: 1.7em;
 }
 
 .button-text{
@@ -433,7 +438,8 @@ a{
     color: var(--main-titles-color);
     font-family: var(--main-font-family-titulos);
     font-size: var(--main-font-size-titulos);
-    letter-spacing: .3em;
+    text-align: center;
+    letter-spacing: .1em;
 }
 
 .main-title-container span{
@@ -453,6 +459,7 @@ a{
 
 .lobby-container{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -491,4 +498,19 @@ a{
 
 .empty-footer-container img{
     width: 10em;
+}
+
+.banner-mask{
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3em;
+}
+
+.banner-mask img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
 }

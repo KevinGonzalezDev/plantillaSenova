@@ -4,7 +4,7 @@
 
 
       <div class="lobby-container">
-        <img id="Image-Maps-Com-image-maps-2020-12-01-164317" src="https://www.image-maps.com/m/private/0/03jrht0j13a3fh0ed9ki6ctfrn_background.png" border="0" width="100%" height="100%" orgWidth="100%" orgHeight="100%" usemap="#image-maps-2020-12-01-164317" alt="" />
+        <img id="Image-Maps-Com-image-maps-2020-12-01-164317" src="img/lobby/background.png" border="0" width="100%" height="100%" orgWidth="100%" orgHeight="100%" usemap="#image-maps-2020-12-01-164317" alt="" />
         <map name="image-maps-2020-12-01-164317" id="ImageMapsCom-image-maps-2020-12-01-164317">
         <area  alt="" title="" href="{{route('micrositio', ['id'=>'1'])}}" shape="rect" coords="331,718,535,936" style="outline:none;" target="_self"     />
         <area  alt="" title="" href="{{route('micrositio',['id'=>'2'])}}" shape="rect" coords="534,717,745,933" style="outline:none;" target="_self"     />

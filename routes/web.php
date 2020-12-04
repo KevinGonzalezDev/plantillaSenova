@@ -15,6 +15,7 @@ use app\Http\Controllers\Controller;
 */
 
 Route::get('/', 'AdminController@index')->name('raiz');
+Route::get('/micrositio')->name('ViewMicrositio');
 Route::get('/micrositio/{id}', 'AdminController@micrositio')->name('micrositio');
 Route::get('/micrositioVideo/{id}', 'AdminController@micrositioVideo')->name('micrositioVideo');
 Route::get('/content', 'AdminController@content')->name('content');

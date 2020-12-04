@@ -1,12 +1,16 @@
 @extends('layout.general')
 
 @section('content')
-    @foreach( $datos['micrositio'] as $d)
-    <img src="{{ asset('img/templates/home/'.$d->img_banner)}}" alt="Home Banner" id="home-banner" id="banner">
-    @endforeach
+
+        @foreach( $datos['micrositio'] as $d)
+        <div class="banner-mask">
+            <img src="{{ asset('img/templates/home/'.$d->img_banner)}}" alt="Home Banner" id="home-banner" id="banner">
+        </div>
+        @endforeach
+
     <div class="flex-row-wrap-center main-container">
 
-
+        
         @foreach( $datos['info'] as $d)
         <div class="block-category">
 

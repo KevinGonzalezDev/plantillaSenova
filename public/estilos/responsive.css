@@ -3,10 +3,13 @@
     
     :root{
         --main-width-blocks-category:300px;
-        --main-font-size-titulos:2.7em;
-        --main-font-size-subtitulos:1.7em;
-        --main-font-size-parrafos:1.2em;
-        --main-font-size-links:1em;
+        --main-font-size-titulos:2.3em;
+        --main-font-size-subtitulos:1.1em;
+        --main-font-size-parrafos:.9em;
+        --main-font-size-links:.8em;
+
+
+        --main-height-blocks:370px;
 
         --main-width-blocks-video:380px;
     }
@@ -14,16 +17,27 @@
     .main-container{
         width: 85%;
     }
+
+    .banner-mask{
+        height: 650px;
+    }
+
+    .main-video-container iframe{
+        width: 100%;
+        height: 650px;
+    }
     
 }
 
 @media screen and (max-width:1440px){
     :root{
         --main-width-blocks-category:270px;
-        --main-font-size-titulos:2.7em;
-        --main-font-size-subtitulos:1.7em;
-        --main-font-size-parrafos:1.2em;
-        --main-font-size-links:1em;
+        --main-font-size-titulos:2.3em;
+        --main-font-size-subtitulos:1.1em;
+        --main-font-size-parrafos:.9em;
+        --main-font-size-links:.8em;
+
+        --main-height-blocks:350px;
 
         --main-width-blocks-video:370px;
     }
@@ -36,10 +50,12 @@
 @media screen and (max-width:1280px){
     :root{
 
-        --main-font-size-titulos:2.3em;
-        --main-font-size-subtitulos:1.3em;
-        --main-font-size-parrafos:1em;
+        --main-font-size-titulos:1.8em;
+        --main-font-size-subtitulos:1em;
+        --main-font-size-parrafos:.8em;
         --main-font-size-links:.8em;
+
+        --main-height-blocks:350px;
 
         --main-width-blocks-video:320px;
         --main-width-blocks-category:230px;
@@ -47,5 +63,9 @@
 
     #popUp iframe{
         height: 620px;
+    }
+
+    .banner-mask{
+        height: 560px;
     }
 }

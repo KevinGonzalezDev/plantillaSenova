@@ -31,7 +31,7 @@
 
     <div class="main-footer-container main-container">
 
-        <img src="{{ asset('img/icons/sennova.png')}}" alt="Sennova logo" id="logo-sennova">
+    <a href="{{route('raiz')}}"><img src="{{ asset('img/icons/sennova.png')}}" alt="Sennova logo" id="logo-sennova"></a>
 
         <ul>
             <li class="list-title">ENLACES:</li>
@@ -60,6 +60,7 @@
 
     <script src="{{ asset('jquery/jquery.js')}}"></script>
     <script src="{{ asset('js/popup.js')}}"></script>
+<script src="{{ asset('js/hover-videos.js') }}"></script>
 
 </body>
 </html>

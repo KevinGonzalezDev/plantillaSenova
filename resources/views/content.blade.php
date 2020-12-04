@@ -21,21 +21,21 @@
 
         <div class="flex-row-wrap-center videos-content">
           @foreach( $datos['videos'] as $d)
-            <div class="video-block">
+            <div class="video-block video-block-hover">
 
-                <span>
+                <span class="video-block-hover">
                     <img src="{{ asset('img/templates/content/'.$d->imagen)}}" alt="block image">
-                    <span class="orange-filter"></span>
+                    <span class="filter black-filter"></span>
                 </span>
 
-                <div>
-                    <h2>{{$d->nombre}}</h2>
+                <div class="video-block-hover">
+                    <h2 class="video-block-hover">{{$d->nombre}}</h2>
 
-                    <img src="{{ asset('img/icons/play.png')}}" class="MostrarPop">
+                    <img src="{{ asset('img/icons/play.png')}}" class="MostrarPop video-block-hover">
 
-                    <div>
-                        <p>{{$d->texto_descriptivo}}</p>
-                        <button onClick = 'showVideo("{{$d->url}}")' >VER</button>
+                    <div class="video-block-hover">
+                        <p class="video-block-hover">{{$d->texto_descriptivo}}</p>
+                        <button onClick = 'showVideo("{{$d->url}}")' class="video-block-hover">VER</button>
                     </div>
 
                 </div>
