@@ -35,7 +35,11 @@
 
                     <div class="video-block-hover">
                         <p class="video-block-hover">{{$d->texto_descriptivo}}</p>
+                        @if( $d->embebido == true )
                         <button onClick = 'showVideo("{{$d->url}}")' class="video-block-hover">VER</button>
+                        @else
+                        <button onClick = "location.href='{{$d->url}}'" class="video-block-hover">VER</button>
+                        @endif
                     </div>
 
                 </div>
