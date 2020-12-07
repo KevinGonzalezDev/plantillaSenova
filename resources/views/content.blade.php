@@ -31,7 +31,7 @@
                 <div class="video-block-hover">
                     <h2 class="video-block-hover">{{$d->nombre}}</h2>
 
-                    <img src="{{ asset('img/icons/play.png')}}" class="MostrarPop video-block-hover">
+                    <img src="{{ asset('img/icons/play.png')}}" ">
 
                     <div class="video-block-hover">
                         <p class="video-block-hover">{{$d->texto_descriptivo}}</p>
@@ -64,7 +64,6 @@
 
 <script>
   function showVideo(alerta){
-    alert(alerta);
     document.getElementById('videoFrame').src = alerta;
     document.getElementById("popUp").classList.add('displayed');
   }

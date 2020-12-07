@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class AdminController extends Controller
 {
@@ -33,6 +34,9 @@ class AdminController extends Controller
       $sql1 = DB::SELECT("SELECT * "
               . "FROM video "
               . "WHERE tematica = ". $id);
+      if (count($sql1) == 1 && !$sql1[0]->embebido) {
+        return Redirect::to($sql1[0]->url);
+      }
 
         $datos = ['infoTematica'=>$sql,'videos'=>$sql1];
         return view('content')->with('datos',$datos);
