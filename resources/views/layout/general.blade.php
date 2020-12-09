@@ -35,24 +35,18 @@
 
         <ul>
             <li class="list-title">ENLACES:</li>
-            <li><a href="">Enlace1</a></li>
-            <li><a href="">Enlace2</a></li>
-            <li><a href="">Enlace3</a></li>
-        </ul>
-
-        <ul>
-            <li class="list-title">CONTACTO:</li>
-            <li>Correo:<br>email@senova.com</li>
-            <li>Tel:<br>310 000 0000</li>
+            <li><a href="http://sennova.senaedu.edu.co/">Sennova</a></li>
+            <li><a href="http://revistas.sena.edu.co/">Portal de revistas Sena</a></li>
+            <li><a href="https://www.sena.edu.co">SENA</a></li>
         </ul>
 
         <ul>
             <li class="list-title ">REDES:</li>
             <ul class="social-links">
-                <li><a href=""><img src="{{ asset('img/icons/fb.png')}}" alt="social icon"></a></li>
-                <li><a href=""><img src="{{ asset('img/icons/ig.png')}}" alt="social icon"></a></li>
-                <li><a href=""><img src="{{ asset('img/icons/ld.png')}}" alt="social icon"></a></li>
-                <li><a href=""><img src="{{ asset('img/icons/tw.png')}}" alt="social icon"></a></li>
+                <li><a href="https://www.facebook.com/SENA/"><img src="{{ asset('img/icons/fb.png')}}" alt="social icon"></a></li>
+                <li><a href="https://www.instagram.com/senacomunica/"><img src="{{ asset('img/icons/ig.png')}}" alt="social icon"></a></li>
+                <li><a href="https://co.linkedin.com/school/servicio-nacional-de-aprendizaje-sena-/"><img src="{{ asset('img/icons/ld.png')}}" alt="social icon"></a></li>
+                <li><a href="https://twitter.com/SENAComunica"><img src="{{ asset('img/icons/tw.png')}}" alt="social icon"></a></li>
             </ul>
         </ul>
     </div>
